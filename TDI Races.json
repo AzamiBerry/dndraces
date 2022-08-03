@@ -1,0 +1,4176 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TDI Races",
+				"full": "The Dormant Isles - Races",
+				"abbreviation": "The Dormant Isles",
+				"authors": [
+					"Azami"
+				],
+				"convertedBy": [
+					"Azami"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 1647419546,
+		"dateLastModified": 1647419546,
+		"_dateLastModifiedHash": "4b2bcd70a8"
+	},
+	"race": [
+{"name": "Aarakocra",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": {
+		"walk": 30,
+		"fly": true
+	},
+	"traitTags": [
+		"Natural Weapon"
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": [
+					"gust of wind"
+				]
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Flight",
+			"entries": [
+				"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Talons",
+			"entries": [
+				"You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Wind Caller",
+			"entries": [
+				"Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast {@spell gust of wind} with this trait (choose when you select this race)."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Aasimar",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 30,
+	"age": {
+		"max": 180
+	},
+	"darkvision": 60,
+	"resist": [
+		"necrotic",
+		"radiant"
+	],
+	"additionalSpells": [
+		{
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"1": [
+					"light#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Celestial Resistance",
+			"entries": [
+				"You have resistance to necrotic damage and radiant damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Healing Hands",
+			"entries": [
+				"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Light Bearer",
+			"entries": [
+				"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Celestial Revelation",
+			"entries": [
+				"When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Necrotic Shroud",
+							"entry": "Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+						},
+						{
+							"type": "item",
+							"name": "Radiant Consumption",
+							"entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+						},
+						{
+							"type": "item",
+							"name": "Radiant Soul",
+							"entry": "Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+						}
+					],
+					"style": "list-hang-notitle"
+				}
+			]
+		}
+	],
+	"_versions": [
+		{
+			"name": "Aasimar; Necrotic Shroud",
+			"source": "MPMM",
+			"_mod": {
+				"entries": {
+					"mode": "replaceArr",
+					"replace": "Celestial Revelation",
+					"items": {
+						"name": "Celestial Revelation (Necrotic Shroud)",
+						"type": "entries",
+						"entries": [
+							"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
+							"Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Aasimar; Radiant Consumption",
+			"source": "MPMM",
+			"_mod": {
+				"entries": {
+					"mode": "replaceArr",
+					"replace": "Celestial Revelation",
+					"items": {
+						"name": "Celestial Revelation (Radiant Consumption)",
+						"type": "entries",
+						"entries": [
+							"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
+							"Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Aasimar; Radiant Soul",
+			"source": "MPMM",
+			"_mod": {
+				"entries": {
+					"mode": "replaceArr",
+					"replace": "Celestial Revelation",
+					"items": {
+						"name": "Celestial Revelation (Radiant Soul)",
+						"type": "entries",
+						"entries": [
+							"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
+							"Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+						]
+					}
+				}
+			}
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Centaur",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"creatureTypes": [
+		"fey"
+	],
+	"size": [
+		"M"
+	],
+	"speed": 40,
+	"traitTags": [
+		"Natural Weapon",
+		"Powerful Build"
+	],
+	"skillProficiencies": [
+		{
+			"choose": {
+				"from": [
+					"animal handling",
+					"medicine",
+					"nature",
+					"survival"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Creature Type",
+			"entries": [
+				"You are a Fey."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Charge",
+			"entries": [
+				"If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Equine Build",
+			"entries": [
+				"You count as one size larger when determining your carrying capacity and the weight you can push or drag.",
+				"In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Hooves",
+			"entries": [
+				"You have hooves that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Natural Affinity",
+			"entries": [
+				"Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, or {@skill Survival}."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dhampir",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": {
+		"walk": 35,
+		"climb": true
+	},
+	"darkvision": 60,
+	"traitTags": [
+		"Natural Weapon"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you gain this lineage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Ancestral Legacy",
+			"entries": [
+				"If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.",
+				"If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Deathless Nature",
+			"entries": [
+				"You don't need to breathe."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spider Climb",
+			"entries": [
+				"You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Vampiric Bite",
+			"entries": [
+				"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals {@damage 1d4} piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.",
+				"When you attack with this bite and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:",
+				{
+					"type": "list",
+					"items": [
+						"You regain hit points equal to the piercing damage dealt by the bite.",
+						"You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite"
+					]
+				},
+				"You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dragonborn (Red)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Breath Weapon",
+			"entries": [
+				"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} fire damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+				"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Resistance",
+			"entries": [
+				"You have resistance to fire damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Forceful Presence",
+			"entries": [
+				"You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma ({@skill Intimidation} or {@skill Persuasion}) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
+			]
+		}
+	],
+	"_versions": [
+		{
+			"_template": {
+				"name": "Dragonborn (Chromatic; {{color}})",
+				"source": "FTD",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": "Chromatic Ancestry"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Breath Weapon",
+							"items": {
+								"type": "entries",
+								"name": "Breath Weapon",
+								"entries": [
+									"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+									"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Draconic Resistance",
+							"items": {
+								"type": "entries",
+								"name": "Draconic Resistance",
+								"entries": [
+									"You have resistance to {{damageType}} damage."
+								]
+							}
+						}
+					]
+				}
+			},
+			"_implementations": [
+				{
+					"_variables": {
+						"color": "Black",
+						"damageType": "acid"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Blue",
+						"damageType": "lightning"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Green",
+						"damageType": "poison"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Red",
+						"damageType": "fire"
+					}
+				},
+				{
+					"_variables": {
+						"color": "White",
+						"damageType": "cold"
+					}
+				}
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dragonborn (Blue)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Breath Weapon",
+			"entries": [
+				"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} lightning damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+				"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Resistance",
+			"entries": [
+				"You have resistance to lightning damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spectral Flight",
+			"entries": [
+				"Starting at 3rd level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can't do so again until you finish a long rest."
+			]
+		}
+	],
+	"_versions": [
+		{
+			"_template": {
+				"name": "Dragonborn (Chromatic; {{color}})",
+				"source": "FTD",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": "Chromatic Ancestry"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Breath Weapon",
+							"items": {
+								"type": "entries",
+								"name": "Breath Weapon",
+								"entries": [
+									"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+									"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Draconic Resistance",
+							"items": {
+								"type": "entries",
+								"name": "Draconic Resistance",
+								"entries": [
+									"You have resistance to {{damageType}} damage."
+								]
+							}
+						}
+					]
+				}
+			},
+			"_implementations": [
+				{
+					"_variables": {
+						"color": "Black",
+						"damageType": "acid"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Blue",
+						"damageType": "lightning"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Green",
+						"damageType": "poison"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Red",
+						"damageType": "fire"
+					}
+				},
+				{
+					"_variables": {
+						"color": "White",
+						"damageType": "cold"
+					}
+				}
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dragonborn (Green)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Breath Weapon",
+			"entries": [
+				"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} poison damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+				"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Resistance",
+			"entries": [
+				"You have resistance to poison damage and advantage on Saving Throws against being Poisoned."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Corrosion",
+			"entries": [
+				"Any poison type damage you deal ignores poison resistance and treats poison immunity as resistance. "
+			]
+		}
+	],
+	"_versions": [
+		{
+			"_template": {
+				"name": "Dragonborn (Chromatic; {{color}})",
+				"source": "FTD",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": "Chromatic Ancestry"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Breath Weapon",
+							"items": {
+								"type": "entries",
+								"name": "Breath Weapon",
+								"entries": [
+									"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+									"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Draconic Resistance",
+							"items": {
+								"type": "entries",
+								"name": "Draconic Resistance",
+								"entries": [
+									"You have resistance to {{damageType}} damage."
+								]
+							}
+						}
+					]
+				}
+			},
+			"_implementations": [
+				{
+					"_variables": {
+						"color": "Black",
+						"damageType": "acid"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Blue",
+						"damageType": "lightning"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Green",
+						"damageType": "poison"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Red",
+						"damageType": "fire"
+					}
+				},
+				{
+					"_variables": {
+						"color": "White",
+						"damageType": "cold"
+					}
+				}
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dragonborn (Black)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Breath Weapon",
+			"entries": [
+				"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} acid damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+				"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Resistance",
+			"entries": [
+				"You have resistance to acid damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Magic Resistance",
+			"entries": [
+				"You have advantage on saving throws against spells."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Suppressed Magic",
+			"entries": [
+				"You can't benefit from the the Spellcasting feature or any feats that allow you to cast spells."
+			]
+		}
+		
+	],
+	"_versions": [
+		{
+			"_template": {
+				"name": "Dragonborn (Chromatic; {{color}})",
+				"source": "FTD",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": "Chromatic Ancestry"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Breath Weapon",
+							"items": {
+								"type": "entries",
+								"name": "Breath Weapon",
+								"entries": [
+									"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+									"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Draconic Resistance",
+							"items": {
+								"type": "entries",
+								"name": "Draconic Resistance",
+								"entries": [
+									"You have resistance to {{damageType}} damage."
+								]
+							}
+						}
+					]
+				}
+			},
+			"_implementations": [
+				{
+					"_variables": {
+						"color": "Black",
+						"damageType": "acid"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Blue",
+						"damageType": "lightning"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Green",
+						"damageType": "poison"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Red",
+						"damageType": "fire"
+					}
+				},
+				{
+					"_variables": {
+						"color": "White",
+						"damageType": "cold"
+					}
+				}
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dragonborn (White)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Breath Weapon",
+			"entries": [
+				"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} fire damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+				"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Resistance",
+			"entries": [
+				"You have resistance to cold damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Vengeful Assault",
+			"entries": [
+				"When you take damage from a creature in range of a weapon you are wielding, you can use your reaction to make an attack with the weapon against that creature. Once you use this trait, you can't do so again until you finish a short or long rest."
+			]
+		}
+	],
+	"_versions": [
+		{
+			"_template": {
+				"name": "Dragonborn (Chromatic; {{color}})",
+				"source": "FTD",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "removeArr",
+							"names": "Chromatic Ancestry"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Breath Weapon",
+							"items": {
+								"type": "entries",
+								"name": "Breath Weapon",
+								"entries": [
+									"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
+									"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Draconic Resistance",
+							"items": {
+								"type": "entries",
+								"name": "Draconic Resistance",
+								"entries": [
+									"You have resistance to {{damageType}} damage."
+								]
+							}
+						}
+					]
+				}
+			},
+			"_implementations": [
+				{
+					"_variables": {
+						"color": "Black",
+						"damageType": "acid"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Blue",
+						"damageType": "lightning"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Green",
+						"damageType": "poison"
+					}
+				},
+				{
+					"_variables": {
+						"color": "Red",
+						"damageType": "fire"
+					}
+				},
+				{
+					"_variables": {
+						"color": "White",
+						"damageType": "cold"
+					}
+				}
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dwarf (Hill)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 25,
+	"darkvision": 60,
+	"traitTags": [
+		"Tool Proficiency"
+	],
+	"weaponProficiencies": [
+		{
+			"battleaxe|phb": true,
+			"handaxe|phb": true,
+			"light hammer|phb": true,
+			"warhammer|phb": true
+		}
+	],
+	"resist": [
+		"poison"
+	],
+	"entries": [
+		{
+			"name": "Speed",
+			"entries": [
+				"Your speed is not reduced by wearing heavy armor."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dwarven Resilience",
+			"entries": [
+				"You have advantage on saving throws against poison, and you have resistance against poison damage."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dwarven Combat Training",
+			"entries": [
+				"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Tool Proficiency",
+			"entries": [
+				"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Stonecunning",
+			"entries": [
+				"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Languages",
+			"entries": [
+				"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dwarven Toughness",
+			"entries": [
+				"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+			],
+			"type": "entries"
+		}
+	],
+		"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Dwarf (Mountain)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 25,
+	"darkvision": 60,
+	"traitTags": [
+		"Tool Proficiency"
+	],
+	"weaponProficiencies": [
+		{
+			"battleaxe|phb": true,
+			"handaxe|phb": true,
+			"light hammer|phb": true,
+			"warhammer|phb": true
+		}
+	],
+	"resist": [
+		"poison"
+	],
+	"entries": [
+		{
+			"name": "Speed",
+			"entries": [
+				"Your speed is not reduced by wearing heavy armor."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dwarven Resilience",
+			"entries": [
+				"You have advantage on saving throws against poison, and you have resistance against poison damage."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dwarven Combat Training",
+			"entries": [
+				"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Tool Proficiency",
+			"entries": [
+				"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Stonecunning",
+			"entries": [
+				"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Languages",
+			"entries": [
+				"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dwarven Armor Training",
+			"entries": [
+				"You have proficiency with light and medium armor."
+			],
+			"type": "entries"
+		}
+	],
+		"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Elf (Dark)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 120,
+	"traitTags": [
+		"Improved Resting",
+		"Sunlight Sensitivity"
+	],
+	"skillProficiencies": [
+		{
+			"perception": true
+		}
+	],
+	"entries": [
+		{
+			"name": "Superior Darkvision",
+			"entries": [
+				"Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"data": {
+				"overwrite": "Darkvision"
+			},
+			"type": "entries"
+		},
+		{
+			"name": "Keen Senses",
+			"entries": [
+				"You have proficiency in the {@skill Perception} skill."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Fey Ancestry",
+			"entries": [
+				"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Trance",
+			"entries": [
+				"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+				"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Sunlight Sensitivity",
+			"entries": [
+				"You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dark Elf Magic",
+			"entries": [
+				"You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once with this trait; you regain the ability to cast it when you finish a long rest. When you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Dark Elf Weapon Training",
+			"entries": [
+				"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
+			],
+			"type": "entries"
+		}
+	],
+	"weaponProficiencies": [
+		{
+			"rapier|phb": true,
+			"shortsword|phb": true,
+			"hand crossbow|phb": true
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"faerie fire"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"darkness"
+						]
+					}
+				}
+			},
+			"ability": "cha",
+			"known": {
+				"1": [
+					"dancing lights#c"
+				]
+			}
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Elf (High)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"traitTags": [
+		"Improved Resting"
+	],
+	"skillProficiencies": [
+		{
+			"perception": true
+		}
+	],
+	"entries": [
+		{
+			"name": "Keen Senses",
+			"entries": [
+				"You have proficiency in the {@skill Perception} skill."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Fey Ancestry",
+			"entries": [
+				"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Trance",
+			"entries": [
+				"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+				"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Elf Weapon Training",
+			"entries": [
+				"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Cantrip",
+			"entries": [
+				"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence is your spellcasting ability for it."
+			],
+			"type": "entries"
+		}
+	],
+	"weaponProficiencies": [
+		{
+			"longsword|phb": true,
+			"shortsword|phb": true,
+			"shortbow|phb": true,
+			"longbow|phb": true
+		}
+	],
+	"additionalSpells": [
+		{
+			"ability": "int",
+			"known": {
+				"1": {
+					"_": [
+						{
+							"choose": "level=0|class=Wizard"
+						}
+					]
+				}
+			}
+		}
+	],
+		"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Elf (Wood)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 35,
+	"darkvision": 60,
+	"traitTags": [
+		"Improved Resting"
+	],
+	"skillProficiencies": [
+		{
+			"perception": true
+		}
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Keen Senses",
+			"entries": [
+				"You have proficiency in the {@skill Perception} skill."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Fey Ancestry",
+			"entries": [
+				"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Trance",
+			"entries": [
+				"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+				"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Elf Weapon Training",
+			"entries": [
+				"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Fleet of Foot",
+			"entries": [
+				"Your base walking speed increases to 35 feet."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Mask of the Wild",
+			"entries": [
+				"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+			],
+			"type": "entries"
+		}
+	],
+	"weaponProficiencies": [
+		{
+			"longsword|phb": true,
+			"shortsword|phb": true,
+			"shortbow|phb": true,
+			"longbow|phb": true
+		}
+	],
+		"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Fairy",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"creatureTypes": [
+		"fey"
+	],
+	"size": [
+		"S"
+	],
+	"speed": {
+		"walk": 30,
+		"fly": true
+	},
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"faerie fire"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"enlarge/reduce"
+						]
+					}
+				}
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"1": [
+					"druidcraft#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Creature Type",
+			"entries": [
+				"You are a Fey."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Fairy Magic",
+			"entries": [
+				"You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Flight",
+			"entries": [
+				"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Firbolg",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"traitTags": [
+		"Powerful Build"
+	],
+	"additionalSpells": [
+		{
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"innate": {
+				"1": [
+					"detect magic",
+					"disguise self"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Firbolg Magic",
+			"entries": [
+				"You can cast {@spell detect magic} and {@spell disguise self} spells with this trait. When you use this version of {@spell disguise self}, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Hidden Step",
+			"entries": [
+				"As a bonus action, you can magically turn {@condition invisible} until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Powerful Build",
+			"entries": [
+				"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Speech of Beast and Leaf",
+			"entries": [
+				"You have the ability to communicate in a limited manner with Beasts, Plants, and vegetation. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Genasi (Air)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 35,
+	"darkvision": 60,
+	"resist": [
+		"lightning"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Unending Breath",
+			"entries": [
+				"You can hold your breath indefinitely while you're not {@condition incapacitated}."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Lightning Resistance",
+			"entries": [
+				"You have resistance to lightning damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Mingle with the Wind",
+			"entries": [
+				"You know the {@spell shocking grasp} cantrip. Starting at 3rd level, you can cast the {@spell feather fall} spell with this trait, without requiring a material component. Starting 5th level, you can also cast the {@spell levitate} spell with this trait, without requiring a material component. Once you cast {@spell feather fall} or {@spell levitate} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	],
+	"raceName": "Genasi",
+	"raceSource": "MPMM",
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"feather fall"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"levitate"
+						]
+					}
+				}
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"1": [
+					"shocking grasp#c"
+				]
+			}
+		}
+	]
+},
+{"name": "Genasi (Earth)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"resist": [
+		"lightning"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Earth Walk",
+			"entries": [
+				"You can move across {@quickref difficult terrain||3} without expending extra movement if you are using your walking speed on the ground or a floor."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Merge with Stone",
+			"entries": [
+				"You know the {@spell blade ward} cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.",
+				"Starting at 5th level, you can cast the {@spell pass without trace} spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	],
+	"raceName": "Genasi",
+	"raceSource": "MPMM",
+	"additionalSpells": [
+		{
+			"innate": {
+				"5": [
+					"pass without trace"
+				]
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"1": [
+					"blade ward#c"
+				]
+			}
+		}
+	]
+},
+{"name": "Genasi (Fire)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"resist": [
+		"fire"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Fire Resistance",
+			"entries": [
+				"You have resistance to fire damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Reach to the Blaze",
+			"entries": [
+				"You know the {@spell produce flame} cantrip. Starting at 3rd level, you can cast the {@spell burning hands} spell with this trait. Starting at 5th level, you can also cast the {@spell flame blade} spell with this trait, without a material component. Once you cast {@spell burning hands} or {@spell flame blade} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	],
+	"raceName": "Genasi",
+	"raceSource": "MPMM",
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"burning hands"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"flame blade"
+						]
+					}
+				}
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"1": [
+					"produce flame#c"
+				]
+			}
+		}
+	]
+},
+{"name": "Genasi (Water)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": {
+		"walk": 30,
+		"swim": true
+	},
+	"darkvision": 60,
+	"resist": [
+		"acid"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Speed",
+			"entries": [
+				"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Acid Resistance",
+			"entries": [
+				"You have resistance to acid damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Amphibious",
+			"entries": [
+				"You breathe air and water."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Call to the Wave",
+			"entries": [
+				"You know the {@spell acid splash} cantrip. Starting at 3rd level, you can cast the {@spell create or destroy water} spell with this trait. Starting at 5th level, you can also cast the {@spell water walk} spell with this trait, without requiring a material component. Once you cast {@spell create or destroy water} or {@spell water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	],
+	"traitTags": [
+		"Amphibious"
+	],
+	"raceName": "Genasi",
+	"raceSource": "MPMM",
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"create or destroy water"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"water walk"
+						]
+					}
+				}
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"1": [
+					"acid splash#c"
+				]
+			}
+		}
+	]
+},
+{"name": "Gnome",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S"
+	],
+	"speed": 25,
+	"darkvision": 60,
+	"traitTags": [
+		"Uncommon Race"
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Gnome Cunning",
+			"entries": [
+				"You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Nimbleness",
+			"entries": [
+				"You can move through the space of any creature that is of a size larger than yours."
+			],
+			"type": "entries"
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Harengon",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 30,
+	"skillProficiencies": [
+		{
+			"perception": true
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Hare-Trigger",
+			"entries": [
+				"You can add your proficiency bonus to your initiative rolls."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Leporine Senses",
+			"entries": [
+				"You have proficiency in the {@skill Perception} skill."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Lucky Footwork",
+			"entries": [
+				"When you fail a Dexterity saving throw, you can use your reaction to roll a {@dice d4} and add it to the save, potentially turning the failure into a success. You can't use this reaction if you're {@condition prone} or your speed is 0."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Rabbit Hop",
+			"entries": [
+				"As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Human",
+	"source": "TDI",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	],
+	"entries": [
+		{
+			"name": "Skills",
+			"entries": [
+				"You gain proficiency in one skill of your choice."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Feat",
+			"entries": [
+				"You gain one {@5etools feat|feats.html} of your choice."
+			],
+			"type": "entries"
+		},
+		{
+			"type": "entries",
+			"name": "Languages",
+			"entries": [
+				"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"count": 2
+			}
+		}
+	],
+	"skillProficiencies": [
+		{
+			"any": 1
+		}
+	],
+	"raceName": "Human",
+	"raceSource": "PHB",
+	"basicRules": true,
+	"feats": [
+		{
+			"any": 1
+		}
+	]
+},
+{"name": "Kobold (Dragon)",
+	"source": "TDI",
+	"page": 25,
+	"lineage": "VRGR",
+	"size": [
+		"S"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"skillProficiencies": [
+		{
+			"choose": {
+				"from": [
+					"arcana",
+					"investigation",
+					"medicine",
+					"sleight of hand",
+					"survival"
+				]
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			},
+			"known": {
+				"_": [
+					{
+						"choose": "level=0|class=Sorcerer",
+						"count": 1
+					}
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Cry",
+			"entries": [
+				"As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Kobold Legacy",
+			"entries": [
+				"Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Craftiness",
+							"entry": "You have proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Investigation}, {@skill Medicine}, {@skill Sleight of Hand}, or {@skill Survival}."
+						},
+						{
+							"type": "item",
+							"name": "Defiance",
+							"entry": "You have advantage on saving throws to avoid or end the {@condition frightened} condition on yourself."
+						},
+						{
+							"type": "item",
+							"name": "Draconic Sorcery",
+							"entry": "You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+						}
+					],
+					"style": "list-hang-notitle"
+				}
+			]
+		}
+	],
+	"_versions": [
+		{
+			"name": "Kobold; Craftiness",
+			"source": "MPMM",
+			"_mod": {
+				"entries": {
+					"mode": "replaceArr",
+					"replace": "Kobold Legacy",
+					"items": {
+						"name": "Kobold Legacy (Craftiness)",
+						"type": "entries",
+						"entries": [
+							"You have proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Investigation}, {@skill Medicine}, {@skill Sleight of Hand}, or {@skill Survival}."
+						]
+					}
+				}
+			},
+			"additionalSpells": null
+		},
+		{
+			"name": "Kobold; Defiance",
+			"source": "MPMM",
+			"_mod": {
+				"entries": {
+					"mode": "replaceArr",
+					"replace": "Kobold Legacy",
+					"items": {
+						"name": "Kobold Legacy (Defiance)",
+						"type": "entries",
+						"entries": [
+							"You have advantage on saving throws to avoid or end the {@condition frightened} condition on yourself."
+						]
+					}
+				}
+			},
+			"skillProficiencies": null,
+			"additionalSpells": null
+		},
+		{
+			"name": "Kobold; Draconic Sorcery",
+			"source": "MPMM",
+			"_mod": {
+				"entries": {
+					"mode": "replaceArr",
+					"replace": "Kobold Legacy",
+					"items": {
+						"name": "Kobold Legacy (Draconic Sorcery)",
+						"type": "entries",
+						"entries": [
+							"You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+						]
+					}
+				}
+			},
+			"skillProficiencies": null
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Kobold (Dragonborn)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S"
+	],
+	"speed": 30,
+	"languageProficiencies": [
+		{
+			"common": true,
+			"draconic": true
+		}
+	],
+	"entries": [
+		{
+			"name": "Grovel, Cower, and Beg",
+			"entries": [
+				"As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that you can see. Once you use this trait, you can't use it again until you finish a short or long rest."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Pack Tactics",
+			"entries": [
+				"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+			],
+			"type": "entries"
+		}
+	],
+		"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Leonin",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 35,
+	"darkvision": 60,
+	"traitTags": [
+		"Natural Weapon"
+	],
+	"skillProficiencies": [
+		{
+			"choose": {
+				"from": [
+					"athletics",
+					"intimidation",
+					"perception",
+					"survival"
+				]
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"other": true
+		}
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Claws",
+			"entries": [
+				"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Hunter's Instincts",
+			"entries": [
+				"You have proficiency in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Perception}, or {@skill Survival}."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Daunting Roar",
+			"entries": [
+				"As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become {@condition frightened} of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
+			],
+			"type": "entries"
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Orc",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"traitTags": [
+		"Powerful Build"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Adrenaline Rush",
+			"entries": [
+				"You can take the {@action Dash} action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+				"Whenever you use this trait, you gain a number of temporary hit points equal to your proficiency bonus."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Powerful Build",
+			"entries": [
+				"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Relentless Endurance",
+			"entries": [
+				"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Owlin",
+	"source": "IDK",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": {
+		"walk": 30,
+		"fly": true
+	},
+	"darkvision": 120,
+	"skillProficiencies": [
+		{
+			"stealth": true
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 120 feet of yourself as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Flight",
+			"entries": [
+				"Thanks to your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Silent Feathers",
+			"entries": [
+				"You have proficiency in the {@skill Stealth} skill."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Reborn",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 30,
+	"traitTags": [
+		"Improved Resting"
+	],
+	"resist": [
+		"poison"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you gain this lineage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Ancestral Legacy",
+			"entries": [
+				"If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.",
+				"If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Deathless Nature",
+			"entries": [
+				"You have escaped death, a fact represented by the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on saving throws against disease and being {@condition poisoned}, and you have resistance to poison damage.",
+						"You have advantage on death saving throws.",
+						"You don't need to eat, drink, or breathe.",
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Knowledge from a Past Life",
+			"entries": [
+				"You temporarily remember glimpses of the past, perhaps faded memories from ages ago or a previous life. When you make an ability check that uses a skill, you can roll a {@dice d6} immediately after seeing the number on the {@dice d20} and add the number on the {@dice d6} to the check. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Satyr",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"creatureTypes": [
+		"fey"
+	],
+	"size": [
+		"M"
+	],
+	"speed": 35,
+	"traitTags": [
+		"Magic Resistance"
+	],
+	"skillProficiencies": [
+		{
+			"performance": true,
+			"persuasion": true
+		}
+	],
+	"toolProficiencies": [
+		{
+			"musical instrument": true
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Creature Type",
+			"entries": [
+				"You are a Fey."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Ram",
+			"entries": [
+				"You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Magic Resistance",
+			"entries": [
+				"You have advantage on saving throws against spells."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Mirthful Leaps",
+			"entries": [
+				"Whenever you make a long jump or a high jump, you can roll a {@dice d8} and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as usual."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Reveler",
+			"entries": [
+				"As an embodiment of revelry, you have proficiency in the {@skill Performance} and {@skill Persuasion} skills, and you have proficiency with one {@item musical instrument|PHB} of your choice."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Tabaxi",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": {
+		"walk": 30,
+		"climb": true
+	},
+	"darkvision": 60,
+	"skillProficiencies": [
+		{
+			"perception": true,
+			"stealth": true
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Speed",
+			"entries": [
+				"Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cat's Claws",
+			"entries": [
+				"You can use your claws to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cat's Talent",
+			"entries": [
+				"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Feline Agility",
+			"entries": [
+				"Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Tiefling (Rakdos)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"traitTags": [
+		"Uncommon Race"
+	],
+	"resist": [
+		"fire"
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"hellish rebuke#2"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"cloud of daggers"
+						]
+					}
+				}
+			},
+			"ability": "cha",
+			"known": {
+				"1": [
+					"thaumaturgy#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Hellish Resistance",
+			"entries": [
+				"You have resistance to fire damage."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Infernal Legacy",
+			"entries": [
+				"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell cloud of daggers} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+			],
+			"type": "entries"
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Tiefling (Dimir)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"traitTags": [
+		"Uncommon Race"
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"disguise self"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"pass without trace"
+						]
+					}
+				}
+			},
+			"ability": "cha",
+			"known": {
+				"1": [
+					"minor illusion#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Fade",
+			"entries": [
+				"When you take damage, you can use your reaction to turn {@condition invisible} and teleport up to 30 feet to an unoccupied space you can see. You remain {@condition invisible} until the start of your next turn or until you attack or cast a spell."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Infernal Legacy",
+			"entries": [
+				"You know the {@spell minor illusion} cantrip. Once you reach 3rd level, you can cast the {@spell disguise self} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell pass without trace} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+			],
+			"type": "entries"
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Tiefling (Beast)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"traitTags": [
+		"Uncommon Race"
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Abyssal Fortitude",
+			"entries": [
+				"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+			],
+			"type": "entries"
+		},
+		{
+			"type": "entries",
+			"name": "Claws",
+			"entries": [
+				"You can use your claws to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Winged",
+			"entries": [
+				"You have bat-like wings sprouting from your shoulder blades. You have a flying speed of 30 feet while you aren't wearing heavy armor."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Tiefling (Plague)",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"darkvision": 60,
+	"traitTags": [
+		"Uncommon Race"
+	],
+	"resist": [
+		"necrotic"
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"3": {
+					"daily": {
+						"1": [
+							"ray of sickness"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"wither and bloom"
+						]
+					}
+				}
+			},
+			"ability": "cha",
+			"known": {
+				"1": [
+					"sapping sting#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"name": "Darkvision",
+			"entries": [
+				"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Plague Resistance",
+			"entries": [
+				"You have resistance to necrotic damage."
+			],
+			"type": "entries"
+		},
+		{
+			"name": "Infernal Legacy",
+			"entries": [
+				"You know the {@spell sapping sting} cantrip. Once you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell wither and bloom} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+			],
+			"type": "entries"
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+}
+]
+}

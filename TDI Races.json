@@ -3761,7 +3761,7 @@
 		}
 	]
 },
-{"name": "Tiefling (Rakdos)",
+{"name": "Tiefling (Kaval)",
 	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [
@@ -3870,7 +3870,7 @@
 		}
 	]
 },
-{"name": "Tiefling (Dimir)",
+{"name": "Tiefling (Athraia)",
 	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [
@@ -3976,7 +3976,7 @@
 		}
 	]
 },
-{"name": "Tiefling (Beast)",
+{"name": "Tiefling (Hircana)",
 	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [
@@ -4063,7 +4063,7 @@
 		}
 	]
 },
-{"name": "Tiefling (Plague)",
+{"name": "Tiefling (Panuk)",
 	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [

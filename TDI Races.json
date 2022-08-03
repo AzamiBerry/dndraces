@@ -1297,7 +1297,7 @@
 	"size": [
 		"M"
 	],
-	"speed": 25,
+	"speed": 30,
 	"darkvision": 60,
 	"traitTags": [
 		"Tool Proficiency"
@@ -1423,7 +1423,7 @@
 	"size": [
 		"M"
 	],
-	"speed": 25,
+	"speed": 30,
 	"darkvision": 60,
 	"traitTags": [
 		"Tool Proficiency"
@@ -2671,7 +2671,7 @@
 	"size": [
 		"S"
 	],
-	"speed": 25,
+	"speed": 30,
 	"darkvision": 60,
 	"traitTags": [
 		"Uncommon Race"
@@ -2907,7 +2907,6 @@
 },
 {"name": "Kobold (Dragon)",
 	"source": "TDI",
-	"page": 25,
 	"lineage": "VRGR",
 	"size": [
 		"S"
@@ -3354,7 +3353,7 @@
 	]
 },
 {"name": "Owlin",
-	"source": "IDK",
+	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [
 		"S",
@@ -4124,6 +4123,367 @@
 				"You know the {@spell sapping sting} cantrip. Once you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell wither and bloom} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
 			],
 			"type": "entries"
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Tortle",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S",
+		"M"
+	],
+	"speed": 30,
+	"traitTags": [
+		"Natural Armor",
+		"Natural Weapon"
+	],
+	"skillProficiencies": [
+		{
+			"choose": {
+				"from": [
+					"animal handling",
+					"medicine",
+					"nature",
+					"perception",
+					"stealth",
+					"survival"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"You are Medium or Small. You choose the size when you select this race."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Claws",
+			"entries": [
+				"You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Hold Breath",
+			"entries": [
+				"You can hold your breath for up to 1 hour."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Natural Armor",
+			"entries": [
+				"Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Nature's Intuition",
+			"entries": [
+				"Thanks to your mystical connection to nature, you gain proficiency with one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Shell Defense",
+			"entries": [
+				"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Triton",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": {
+		"walk": 30,
+		"swim": true
+	},
+	"darkvision": 60,
+	"traitTags": [
+		"Amphibious"
+	],
+	"resist": [
+		"cold"
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"1": {
+					"daily": {
+						"1": [
+							"fog cloud"
+						]
+					}
+				},
+				"3": {
+					"daily": {
+						"1": [
+							"gust of wind"
+						]
+					}
+				},
+				"5": {
+					"daily": {
+						"1": [
+							"water walk"
+						]
+					}
+				}
+			},
+			"ability": {
+				"choose": [
+					"int",
+					"wis",
+					"cha"
+				]
+			}
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Speed",
+			"entries": [
+				"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Amphibious",
+			"entries": [
+				"You can breathe air and water."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Control Air and Water",
+			"entries": [
+				"You can cast {@spell fog cloud} with this trait. Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait. Starting at 5th level, you can also cast the {@spell water walk} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.",
+				"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Darkvision",
+			"entries": [
+				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Emissary of the Sea",
+			"entries": [
+				"You can communicate simple ideas to any Beast, Elemental, or Monstrosity that has a swimming speed. It can understand your words, though you have no special ability to understand it in return."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Guardian of the Depths",
+			"entries": [
+				"Adapted to the frigid ocean depths, you have resistance to cold damage."
+			]
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						2,
+						1
+					]
+				}
+			}
+		},
+		{
+			"choose": {
+				"weighted": {
+					"from": [
+						"str",
+						"dex",
+						"con",
+						"int",
+						"wis",
+						"cha"
+					],
+					"weights": [
+						1,
+						1,
+						1
+					]
+				}
+			}
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true,
+			"anyStandard": 1
+		}
+	]
+},
+{"name": "Grung",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"S"
+	],
+	"speed": {
+		"walk": 30,
+		"swim": true
+	},
+	"traitTags": [
+		"Amphibious"
+	],
+	"immune": [
+		"poison"
+	],
+	"conditionImmune": [
+		"poisoned"
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Amphibious",
+			"entries": [
+				"You can breathe air and water."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Poison Immunity",
+			"entries": [
+				"You're immune to poison damage and the {@condition poisoned} condition."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Poisonous Skin",
+			"entries": [
+				"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a DC 12 Constitution saving throw or take {@dice 2d4} poison damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Standing Leap",
+			"entries": [
+				"Your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Water Dependency",
+			"entries": [
+				"If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of {@condition exhaustion} at the end of that day. You can only recover from this {@condition exhaustion} through magic or by immersing yourself in water for at least 1 hour."
+			]
 		}
 	],
 	"ability": [

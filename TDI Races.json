@@ -11,7 +11,7 @@
 				"convertedBy": [
 					"Azami"
 				],
-				"version": "1.0",
+				"version": "1.1",
 				"targetSchema": "1.0"
 			}
 		],
@@ -114,207 +114,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
-		}
-	]
-},
-{"name": "Aasimar",
-	"source": "TDI",
-	"lineage": "VRGR",
-	"size": [
-		"S",
-		"M"
-	],
-	"speed": 30,
-	"age": {
-		"max": 180
-	},
-	"darkvision": 60,
-	"resist": [
-		"necrotic",
-		"radiant"
-	],
-	"additionalSpells": [
-		{
-			"ability": {
-				"choose": [
-					"int",
-					"wis",
-					"cha"
-				]
-			},
-			"known": {
-				"1": [
-					"light#c"
-				]
-			}
-		}
-	],
-	"entries": [
-		{
-			"type": "entries",
-			"name": "Size",
-			"entries": [
-				"You are Medium or Small. You choose the size when you select this race."
-			]
-		},
-		{
-			"type": "entries",
-			"name": "Celestial Resistance",
-			"entries": [
-				"You have resistance to necrotic damage and radiant damage."
-			]
-		},
-		{
-			"type": "entries",
-			"name": "Darkvision",
-			"entries": [
-				"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
-			]
-		},
-		{
-			"type": "entries",
-			"name": "Healing Hands",
-			"entries": [
-				"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
-			]
-		},
-		{
-			"type": "entries",
-			"name": "Light Bearer",
-			"entries": [
-				"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
-			]
-		},
-		{
-			"type": "entries",
-			"name": "Celestial Revelation",
-			"entries": [
-				"When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest.",
-				{
-					"type": "list",
-					"items": [
-						{
-							"type": "item",
-							"name": "Necrotic Shroud",
-							"entry": "Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-						},
-						{
-							"type": "item",
-							"name": "Radiant Consumption",
-							"entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-						},
-						{
-							"type": "item",
-							"name": "Radiant Soul",
-							"entry": "Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-						}
-					],
-					"style": "list-hang-notitle"
-				}
-			]
-		}
-	],
-	"_versions": [
-		{
-			"name": "Aasimar; Necrotic Shroud",
-			"source": "MPMM",
-			"_mod": {
-				"entries": {
-					"mode": "replaceArr",
-					"replace": "Celestial Revelation",
-					"items": {
-						"name": "Celestial Revelation (Necrotic Shroud)",
-						"type": "entries",
-						"entries": [
-							"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-							"Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-						]
-					}
-				}
-			}
-		},
-		{
-			"name": "Aasimar; Radiant Consumption",
-			"source": "MPMM",
-			"_mod": {
-				"entries": {
-					"mode": "replaceArr",
-					"replace": "Celestial Revelation",
-					"items": {
-						"name": "Celestial Revelation (Radiant Consumption)",
-						"type": "entries",
-						"entries": [
-							"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-							"Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-						]
-					}
-				}
-			}
-		},
-		{
-			"name": "Aasimar; Radiant Soul",
-			"source": "MPMM",
-			"_mod": {
-				"entries": {
-					"mode": "replaceArr",
-					"replace": "Celestial Revelation",
-					"items": {
-						"name": "Celestial Revelation (Radiant Soul)",
-						"type": "entries",
-						"entries": [
-							"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-							"Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
-						]
-					}
-				}
-			}
-		}
-	],
-	"ability": [
-		{
-			"choose": {
-				"weighted": {
-					"from": [
-						"str",
-						"dex",
-						"con",
-						"int",
-						"wis",
-						"cha"
-					],
-					"weights": [
-						2,
-						1
-					]
-				}
-			}
-		},
-		{
-			"choose": {
-				"weighted": {
-					"from": [
-						"str",
-						"dex",
-						"con",
-						"int",
-						"wis",
-						"cha"
-					],
-					"weights": [
-						1,
-						1,
-						1
-					]
-				}
-			}
-		}
-	],
-	"languageProficiencies": [
-		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -423,8 +223,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -538,8 +337,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -686,8 +484,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -834,8 +631,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -982,8 +778,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1138,8 +933,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1286,8 +1080,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1412,8 +1205,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1538,8 +1330,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1689,8 +1480,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1810,8 +1600,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -1932,8 +1721,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -2047,8 +1835,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -2151,8 +1938,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -2247,8 +2033,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	],
 	"raceName": "Genasi",
@@ -2371,8 +2156,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	],
 	"raceName": "Genasi",
@@ -2483,8 +2267,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	],
 	"raceName": "Genasi",
@@ -2623,8 +2406,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	],
 	"traitTags": [
@@ -2740,8 +2522,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -2836,12 +2617,11 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
-{"name": "Human (UA)",
+{"name": "Human",
 	"source": "TDI",
 	"size": [
 		"S",
@@ -2850,8 +2630,7 @@
 	"speed": 30,
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	],
 	"entries": [
@@ -2872,7 +2651,7 @@
 		{
 			"name": "Versatile",
 			"entries": [
-				"You gain the Skilled Feat or another 1st-level Feat of your choice."
+				"You gain a Feat of your choice."
 			],
 			"type": "entries"
 		},
@@ -2880,7 +2659,7 @@
 			"type": "entries",
 			"name": "Languages",
 			"entries": [
-				"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+				"You can speak, read, and write Common."
 			]
 		}
 	],
@@ -2913,7 +2692,7 @@
 		}
 	]
 },
-{"name": "Kobold (Dragon)",
+{"name": "Kobold (Chromatic)",
 	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [
@@ -3095,12 +2874,11 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
-{"name": "Kobold (Chromatic)",
+{"name": "Kobold (Draconic)",
 	"source": "TDI",
 	"lineage": "VRGR",
 	"size": [
@@ -3170,8 +2948,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3275,8 +3052,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3355,8 +3131,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3448,8 +3223,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3548,8 +3322,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3655,8 +3428,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3763,8 +3535,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3872,8 +3643,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -3978,8 +3748,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -4065,8 +3834,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -4174,8 +3942,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -4290,8 +4057,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -4432,8 +4198,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -4535,8 +4300,7 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
 		}
 	]
 },
@@ -4626,8 +4390,69 @@
 	],
 	"languageProficiencies": [
 		{
-			"common": true,
-			"anyStandard": 1
+			"common": true
+		}
+	]
+},
+{
+	"name": "Bearfolk",
+	"source": "TDI",
+	"lineage": "VRGR",
+	"size": [
+		"M"
+	],
+	"speed": 30,
+	"traitTags": [
+		"Natural Armor",
+		"Natural Weapon",
+		"Powerful Build"
+	],
+	"skillProficiencies": [
+		{
+			"athletics": true,
+			"perception": true
+		}
+	],
+	"languageProficiencies": [
+		{
+			"common": true
+		}
+	],
+	"entries": [
+		{
+			"type": "entries",
+			"name": "Bite",
+			"entries": [
+				"Your powerful jaws are natural weapons, which you can use to make unarmed strikes. If it hits, you deal {@damage 1d6} + your Strength modifier piercing damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Natural Armor",
+			"entries": [
+				"Your hide is thick and tough, granting you a natural AC of 13 + your Dexterity modifier and resistance to Cold damage."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Powerful Build",
+			"entries": [
+				"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Ursine Talent",
+			"entries": [
+				"You have proficiency in the {@skill Athletics} and {@skill Perception} skills."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Languages",
+			"entries": [
+				"You can speak, read, and write Common."
+			]
 		}
 	]
 }
